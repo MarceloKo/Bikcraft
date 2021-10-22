@@ -1,6 +1,7 @@
 /* ESTILOS GERAIS */
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 200px;
 }
 p{
     font-family: Georgia, 'Times New Roman', serif;
@@ -161,4 +162,27 @@ p{
 }
 .call p{
     margin-bottom: 20px;
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+    background: #000;
+    width: 100%;
+    
+    padding:40px 0;
+}
+.portfolio .subtitulo{
+    color: #F9C041;
+}
+
+.portfolio .subtitulo::after{
+    color: #F9C041;
+}
+.portfolio_lista li:last-child{
+    margin-top: 20px;
+}
+
+.portfolio .call p{
+    color: #fff;
 }
