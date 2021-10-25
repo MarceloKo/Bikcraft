@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 
 </head>
 
@@ -41,22 +42,38 @@
     </section>
     <!-- FIM INTRODUÇÃO-->
 
-    <section class="container">
+    <section class="container" data-slide="quote">
         <blockquote class="quote_clientes">
             <p>"No mundo atual, a continua expansão de nossa atividade cumpre um papel essencial na formulação da gestão
                 inovadora da qual fazemos parte"</p>
             <cite>Barbara Moss</cite>
+        </blockquote>
+        <blockquote class="quote_clientes">
+            <p>"É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa
+                a sua mancha gráfica. "</p>
+            <cite>Lorem Ipsum</cite>
+        </blockquote>
+        <blockquote class="quote_clientes">
+            <p>"Muitas ferramentas de publicação electrónica e editores de páginas web usam actualmente o Lorem Ipsum
+                como o modelo de texto usado por omissão"</p>
+            <cite>Ipsum Lorem</cite>
         </blockquote>
     </section>
 
 
     <!-- Portfolio-->
     <section class="portfolio">
-        <div class="container">
-            <h2 class="subtitulo">Portfolio</h2>
+        <h2 class="subtitulo">Portfolio</h2>
+        <div class="container" data-slide="portfolio">
+
             <ul class="portfolio_lista">
                 <li class="grid-8"><img src="img/portfolio/foto1.jpg" alt="Bicicleta Retrô"></li>
                 <li class="grid-8"><img src="img/portfolio/foto2.jpg" alt="Bicicleta Passeio"></li>
+                <li class="grid-16"><img src="img/portfolio/foto3.jpg" alt="Bicicleta esporte"></li>
+            </ul>
+            <ul class="portfolio_lista">
+                <li class="grid-8"><img src="img/portfolio/foto2.jpg" alt="Bicicleta Passeio"></li>
+                <li class="grid-8"><img src="img/portfolio/foto1.jpg" alt="Bicicleta Retrô"></li>
                 <li class="grid-16"><img src="img/portfolio/foto3.jpg" alt="Bicicleta esporte"></li>
             </ul>
 
@@ -112,7 +129,8 @@
         </div>
     </footer>
     <!-- FIM FOOTER -->
-
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 
