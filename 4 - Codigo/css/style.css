@@ -353,7 +353,7 @@ p{
     padding: 20px 0;
 }
 
-/* JAVASCRIPT*/
+/* JAVASCRIPT SLIDE*/
 
 [SRC]
 .js [data-slide] {
@@ -392,4 +392,28 @@ p{
   .js [data-slide-nav] > button.active {
     background: #fec454;
   }
+
+/*JAVASCRIPT ANIMAÇÃO TIPOGRAFIAS*/
+.js [data-anime] {
+    opacity: 0;
+  }
+
   
+  /* 7 CSS personalizado dependendo da animação desejada */
+.js .fadeInDown {
+    transform: translate3d(0,-20px,0);
+  }
+.js .fadeInUp {
+    transform: translate3d(0,20px,0);
+  }
+.js .fadeInRight {
+    transform: translate3d(20px,0,0);
+  }
+.js .fadeInLeft {
+    transform: translate3d(-20px,0,0);
+  }
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: transform .8s, opacity .8s;
+  }
