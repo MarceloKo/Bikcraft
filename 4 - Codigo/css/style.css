@@ -5,6 +5,7 @@ body{
 }
 img{
     display: block;
+    max-width: 100%;
 }
 p{
     font-family: Georgia, 'Times New Roman', serif;
@@ -180,6 +181,10 @@ p{
     background: #F9C041;
     text-align: center;
 }
+
+.produtos_lista li img{
+    margin: 0 auto;
+}
 .produtos_lista li h3{
     font-weight: bold;
     font-size: 18px;
@@ -272,6 +277,7 @@ p{
     text-transform: uppercase;
     letter-spacing: .1em;
     margin-top: 20px;
+    text-align: center;
 }
 .qualidade_lista li h3::after{
     content: "";
