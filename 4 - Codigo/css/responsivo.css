@@ -9,6 +9,40 @@
 	.footer_redes ul li a img{
 		width: 23px;
 	}
+
+	/*PRODUTOS*/
+	.produto_item h2{
+		top:-150px;
+		margin-bottom: -56px;
+	}
+	.produto_icone{
+		padding: 33px 0;
+	}
+	.produto_info p{
+		color: #fff;
+		font-size: 14px;
+		height: 122px;
+		line-height: 25px;
+		padding: 20px 30px;
+	}
+	.produto_info ul li{
+		background: #F9C041;
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 20px;
+		float: left;
+		font-weight: bold;
+		text-align: center;
+		height: 49px;
+		width: 181px;
+		padding-top: 16px;
+	}
+
+
+
+
+
+
 }
 
 
@@ -37,10 +71,14 @@
 		margin-bottom: 5px;
 	}
 	.header_menu ul li a:hover{
-		color: #fff;
+		border-color: #fff;
+	}
+	.header_menu ul li a.menu_ativo{
+		border-color: #fff;
 	}
 
-	/*INTRDOUÇAÕ*/
+
+	/*INTRODUÇAÕ*/
 	.introducao{
 		margin-top: 0;
 		padding-top: 40px;
@@ -58,5 +96,62 @@
 	.introducao h1{
 		font-size: 36px;
 	}
+	
+	/*INTRODUÇÃO INTERNA*/
+	.introducao_interna{
+		margin-top: 0px;
+
+	}
+
+
+	/*SOBRE*/
+	.missao_sobre p{
+		font-size: 14px;
+		line-height: 20px;
+		padding-right: 0;
+	}
+	.missao_sobre ul li{
+		font-size: 14px;
+		line-height: 25px;
+	}
+	/*PRODUTOS*/
+	.produto_item h2{
+		top:-100px;
+		margin-bottom: -70px;
+	}
+
+	.produto_icone{
+		padding: 33px 0;
+	}
+	.produto_info p{
+		color: #fff;
+		font-size: 14px;
+		height: auto;
+		line-height: 25px;
+		padding: 20px 30px;
+	}
+	.produto_info ul li{
+		font-size: 14px;
+		line-height: 20px;
+		height: 49px;
+		width: 149px;
+		
+	}
+	.form{
+		padding:0 ;
+	}
+	.orcamento_dados ul{
+		padding: 0;
+	}
+	/*CONTATO*/
+	.contato_form{
+		padding-right: 0;
+		margin-bottom: 60px;
+	}
+	.contato_mapa{
+		display: block;
+	}
+
+
 
 }
