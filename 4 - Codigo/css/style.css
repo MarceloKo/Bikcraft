@@ -417,3 +417,16 @@ p{
     transform: none;
     transition: transform .8s, opacity .8s;
   }
+
+  .nao-aparece{
+      visibility: hidden;
+      height: 0px;
+      position: absolute;
+  }
+
+  #form-sucesso{
+    color: greenyellow;
+  }
+  #form-erro{
+      color: #f64540;
+  }

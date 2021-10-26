@@ -3,7 +3,21 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Bikcraft</title>
+    <title>Bikcraft - Conheça as linhas Passeio, Retrô e Esporte</title>
+    <!-- SEO -->
+    <meta name="description"
+        content=" Compre a sua bicicleta personaza com a Bikcraft, possuimos os melhores modelos do mercado!">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bikcraft - Conheça as linhas Passeio, Retrô e Esporte" />
+    <meta property="og:description"
+        content="Compre a sua bicicleta personaza com a Bikcraft, possuimos os melhores modelos do mercado!" />
+    <meta property="og:url" content="www.bikcraft-cuiaba.com/produtos.html" />
+    <meta property="og:image" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -105,19 +119,27 @@
     <section class="orcamento">
         <div class="container">
             <h2 class="subtitulo">ORÇAMENTO</h2>
-            <form id="form_orcamento" class="form grid-8">
+            <form id="form_orcamento" method="post" action="./enviar-sendgrid.php" class="form grid-8 formphp">
+
                 <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                <input type="text" id="nome" name="nome" required>
 
                 <label for="email">E-mail</label>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email" required>
 
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
+                <input type="text" id="telefone" name="telefone" required>
+
+                <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+                <input type="text" class="nao-aparece" name="leaveblank">
+                <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+                <input type="text" class="nao-aparece" name="dontchange" value="http://">
 
                 <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem"></textarea>
-                <button type="submit" class="btn">Enviar</button>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit" name="enviar" class="btn">Enviar</button>
+
             </form>
             <div class="orcamento_dados grid-8">
                 <h3>Dados</h3>
@@ -183,6 +205,7 @@
     <!-- FIM FOOTER -->
 
     <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-form.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
